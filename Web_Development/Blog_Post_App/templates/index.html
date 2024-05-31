@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/home-bg.jpg') }}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>Com Sat</h1>
+                    <span class="subheading">A Blog App by MuhdCopilot</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <!-- Post preview-->
+            <div class="post-preview">
+                {% for post in posts %}
+                    <a href=" {{ url_for('post', post_id=post.id) }}">
+                        <h2 class="post-title">
+                            {{ post.title }}
+                        </h2>
+                        <h3 class="post-subtitle">
+                            {{ post.subtitle }}
+                        </h3>
+                    </a>
+                    <p class="post-meta"> Posted by {{ post.author }}
+                        on {{ post.date_posted.strftime('%B %d, %Y') }}
+                    </p>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                {% endfor %}
+            </div>
+            
+            
+            <!-- Pager-->
+            <!-- <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div> -->
+        </div>
+    </div>
+</div>
+{% endblock %}
+

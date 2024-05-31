@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}
+    Contact Page
+{% endblock %}
+
+{% block content %}
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/add-bg.jpg') }}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>Add Post</h1>
+                    <span class="subheading">You can Add a blog post here.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content-->
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                    <form name="addForm" id="addForm" method="POST" action="{{ url_for('addpost') }}" novalidate>
+                        <div class="form-floating">
+                            <input class="form-control" id="title" type="text" name="title" placeholder="Please Insert a Title" data-sb-validations="required" />
+                            <label for="name">Title</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="subtitle" type="text" name="subtitle" placeholder="Please Enter the Subtitle..." data-sb-validations="required,email" />
+                            <label for="email">Subtitle</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="author" type="text" name='author' placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="phone">Author</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="content" name="content" placeholder="Blog Content" style="height: 12rem" data-sb-validations="required"></textarea>
+                            <label for="message">Blog content</label>
+                        </div>
+                        <br />
+                        
+                        <button class="btn btn-primary text-uppercase">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+
