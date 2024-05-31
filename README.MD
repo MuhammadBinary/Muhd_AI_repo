@@ -11,7 +11,7 @@ Hi, I am Muhammad Mujahid Haruna, I am a student, I am passionate about creating
 - Web Development ⌨️
 - Robotics and ...
 
-- 🔭 You can contact me on muhd.mujahid2023@gmail.com or 08165686347 
+- 🔭 You can contact me on muhd.mujahid2023@gmail.com or 08165686347.
 
 
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/MuhammadBinary)  
