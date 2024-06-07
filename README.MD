@@ -2,7 +2,7 @@
 ## AI and Machine Learning Engineer
 ![AI and Machine Learning Engineer](https://github.com/MuhammadBinary/Muhd_AI_repo/blob/master/Muhd.jpg)
 
-Hi, I am Muhammad Mujahid Haruna, 13 years of age. I am a JS1, I am passionate about creating innovative solution to coding and Machine Learning enthusiastic.
+Hi, I am Muhammad Mujahid Haruna, 13 years of age. I am a JS1 student, I am passionate about creating innovative solution to coding and Machine Learning enthusiastic.
 
 ### Skills and Experience:
 - Python 💻
